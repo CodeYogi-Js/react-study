@@ -44,3 +44,36 @@
 - Starts a development server
 - Opens browser automatically
 - Runs app on`👉 http://localhost:3000`
+
+### **What is react component***
+- A React component is a small reusable piece of UI (user interface).
+- A React component is a function that returns HTML-like code to show on the screen.
+
+### *Example Component*
+```jsx
+function Hello() {
+  return(
+      <h1>Hello World</h1>;
+      
+      )
+}
+```
+- Hello → component name
+- return → what to show
+- `<h1>Hello World</h1> → UI`
+
+### **What is Fragment**
+- React Fragment is a way to wrap multiple elements together without showing anything extra in the browser.
+- In simple words: It groups elements, but doesn’t create a new HTML tag.
+
+### *Example Component*
+```jsx
+function Hello() {
+  return(
+       <>
+      <h1>Hello</h1>
+      <p>Welcome</p>
+      </>
+      )
+}
+```
