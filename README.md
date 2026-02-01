@@ -1,7 +1,7 @@
 # **REACT-STUDY**
 
-# **React all document are avaliable in react.dev**
-## **old way to create a React application**
+## **React all document are avaliable in react.dev**
+### **old way to create a React application**
 - npx create-react-app 01basic-react
 - npx stand for node package executer means
 - npx run package without installing globally.
