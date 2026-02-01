@@ -87,7 +87,7 @@ export default Button
 - In simple words: It groups elements, but doesn’t create a new HTML tag.
 
 
-### *Example Component*
+### *Example Fragment*
 ```jsx
 function Button() {
   return(
@@ -98,4 +98,71 @@ function Button() {
       )
 }
 ```
+
+## *What is the difference between default export and named export in React (with examples)?*
+### ✅ Example 1: **Default export**
+
+**button.jsx**
+
+```jsx
+function Button() {
+  return <button>Click</button>;
+}
+
+export default Button;
+```
+
+**App.jsx**
+
+```jsx
+import Button from "./button";
+
+function App() {
+  return <Button />;
+}
+```
+
+👉 **Why it works:**
+`Button` is the **default export**, so we import **without `{}`**.
+
+---
+
+### ✅ Example 2: **Named export**
+
+**button.jsx**
+
+```jsx
+export function Button() {
+  return <button>Click</button>;
+}
+```
+
+**App.jsx**
+
+```jsx
+import { Button } from "./button";
+
+function App() {
+  return <Button />;
+}
+```
+
+👉 **Why it works:**
+`Button` is a **named export**, so we import **with `{}`**.
+
+---
+
+### Real-life analogy
+
+* **Default export** → Main product of a shop
+* **Named export** → Specific item chosen from many
+
+---
+
+###  Super short summary
+
+* `import Button` → default export
+* `import { Button }` → named export
+* Both come from `"./button"`
+
 
