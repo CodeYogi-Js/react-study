@@ -57,27 +57,39 @@
 <mycomponent />❌
 <MyComponent />✅
 ```
+- **Uppercase for the file name is just a best practice, not a rule**
 
 ### *Example Component*
 ```jsx
-function Hello() {
-  return(
-      <h1>Hello World</h1>;
-      
-      )
+function Button() {
+  return <button>Click</button>;
 }
+export default Button
 ```
-- Hello → component name
+- Button → component name
 - return → what to show
-- `<h1>Hello World</h1> → UI`
+- `<button>Click</button>; → UI`
+
+### **export default Button;**
+- `export` I want to share this `Button` with other files.`default` This is the main thing of this file.
+
+### **import Button from "./button";**
+- `import` I want to use something from another file.
+- `Button` The name you want to use in this file.
+- `from` = “take it from this file”
+- `"./button"`" File path.
+
+### **import { Button } from "./button";**
+- `import { Button }` is a named import, used to import a specific exported item from a file.
 
 ### **What is Fragment**
 - React Fragment is a way to wrap multiple elements together without showing anything extra in the browser.
 - In simple words: It groups elements, but doesn’t create a new HTML tag.
 
+
 ### *Example Component*
 ```jsx
-function Hello() {
+function Button() {
   return(
        <>
       <h1>Hello</h1>
@@ -86,3 +98,4 @@ function Hello() {
       )
 }
 ```
+
