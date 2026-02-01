@@ -1,7 +1,7 @@
-# **react-study**
+# **REACT-STUDY**
 
-# **react-all-document are avaliable in react.dev**
-## **old react step create**
+# **React all document are avaliable in react.dev**
+## **old way to create a React application**
 - npx create-react-app 01basic-react
 - npx stand for node package executer means
 - npx run package without installing globally.
@@ -48,6 +48,15 @@
 ### **What is react component***
 - A React component is a small reusable piece of UI (user interface).
 - A React component is a function that returns HTML-like code to show on the screen.
+
+### **component name must uppercase**
+- *In React, component names must start with an uppercase letter so React can tell the difference between components and normal HTML tags.*
+- Simple reason:
+👉 React treats lowercase names as HTML elements and uppercase names as custom components.
+```jsx 
+<mycomponent />❌
+<MyComponent />✅
+```
 
 ### *Example Component*
 ```jsx
