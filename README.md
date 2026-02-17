@@ -99,7 +99,7 @@ function Button() {
 }
 ```
 
-## *What is the difference between default export and named export in React (with examples)?*
+### **What is the difference between default export and named export in React (with examples)?**
 ### ✅ Example 1: **Default export**
 
 **button.jsx**
